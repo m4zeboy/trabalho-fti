@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'san francisco';
+  src: url(./sf/SF-Pro-Display-Regular.otf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'san francisco';
+  src: url(./sf/SF-Pro-Display-Bold.otf);
+  font-style: normal;
+  font-weight: 700;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,7 +28,7 @@ h1 {
   font-size: 3.6rem;
 }
 h1, h2, h3, strong {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'san francisco', sans-serif;
 }
 h1, h2, h3 {
   margin-bottom: 2rem;
@@ -38,7 +52,7 @@ ul, ol, menu {
 }
 .attribuition {
   opacity: .5;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'san francisco', sans-serif;
   margin-bottom: 1rem;
 }
 header {
