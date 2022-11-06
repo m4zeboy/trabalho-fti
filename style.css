@@ -22,13 +22,13 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: 'Zen Antique', serif;
+  font-family: 'san francisco', sans-serif;
+
 }
 h1 {
   font-size: 3.6rem;
 }
 h1, h2, h3, strong {
-  font-family: 'san francisco', sans-serif;
 }
 h1, h2, h3 {
   margin-bottom: 2rem;
@@ -40,8 +40,19 @@ ul, ol, menu {
 }
 
 .title {
-  font-family: 'Zen Antique', serif;
-  font-size: 4.8rem;
+  background: linear-gradient(92.05deg, #FFFFFF -1.71%, #7700F7 101.18%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+}
+.title h1 {
+  font-size: 6.4rem;
+}
+.title h2 {
+  font-size: 3.2rem;
+
 }
 .container {
   max-width: 1024px;
@@ -52,7 +63,6 @@ ul, ol, menu {
 }
 .attribuition {
   opacity: .5;
-  font-family: 'san francisco', sans-serif;
   margin-bottom: 1rem;
 }
 header {
@@ -64,7 +74,9 @@ header {
   display: flex;
   align-items: center;
 }
-
+header .container {
+  flex: 1;
+}
 main .container {
   display: grid;
   grid-template-columns: 1fr 250px;
@@ -74,11 +86,14 @@ article,aside {
   border-left: 1px solid #ddd;
   padding: 4rem;
 }
-
+aside q, article p {
+  color: #555;
+}
 article p {
   line-height: 22px;
   letter-spacing: 0.02em;
   text-align: justify;
+  margin-bottom: 1.6rem;
 }
 .profiles-list {
   display: flex;
@@ -141,3 +156,4 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(#7700f7, transparent);
 }
+
