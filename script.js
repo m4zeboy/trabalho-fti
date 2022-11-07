@@ -16,10 +16,12 @@ articleElement.prepend(div);
 prev.addEventListener('click', handlePrev)
 next.addEventListener('click', handleNext)
 
+renderButtons()
 
 function handlePrev() {
   if(selectedContentIndex > 0) {
     selectedContentIndex = selectedContentIndex - 1;
+    renderButtons()
     div.innerHTML = article[selectedContentIndex]
     articleElement.prepend(div);
   }
@@ -28,7 +30,22 @@ function handlePrev() {
 function handleNext() {
   if(selectedContentIndex < article.length - 1) {
     selectedContentIndex = selectedContentIndex + 1;
+    renderButtons()
     div.innerHTML = article[selectedContentIndex]
     articleElement.prepend(div);
    } 
+}
+
+function renderButtons() {
+  if(selectedContentIndex === 0) {
+    prev.style.display = "none"
+    next.style.display = "flex"
+  } else if(selectedContentIndex === article.length - 1) {
+    prev.style.display = "flex"
+    next.style.display = "none"
+  } else {
+    prev.style.display = "flex"
+    next.style.display = "flex"
+  }
+
 }
