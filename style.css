@@ -165,4 +165,28 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(#7700f7, transparent);
 }
+.controls {
+  display: flex;
+  align-items: center;
+}
+.nav-btn {
+  padding: .4rem 2rem;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  text-decoration: none;
+   color: black;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1rem;
+}
+.nav-btn img {
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+.nav-btn:last-child {
+  margin-left: 2rem;
+}
 
