@@ -95,6 +95,15 @@ article p {
   text-align: justify;
   margin-bottom: 1.6rem;
 }
+
+article img {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+article div {
+  margin-bottom: 4rem;
+}
 .profiles-list {
   display: flex;
   flex-direction: column;
