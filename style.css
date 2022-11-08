@@ -176,10 +176,13 @@ footer {
   background: linear-gradient(#7700f7, transparent);
 }
 .controls {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 2rem;
 }
+
 .nav-btn {
   padding: .4rem 2rem;
   background-color: #eee;
@@ -206,3 +209,12 @@ footer {
 
 }
 
+.nav-btn.not-allowed {
+  opacity: .5;
+  cursor: none;
+}
+
+.nav-btn.not-allowed:hover {
+  background: #eee;
+  box-shadow: none;
+}
