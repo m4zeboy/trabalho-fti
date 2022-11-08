@@ -97,10 +97,14 @@ article p {
   margin-bottom: 1.6rem;
 }
 
-article img {
+article img.article-img {
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 10px;
+  margin-bottom: 1.6rem;
+}
+figcaption {
+  opacity: .5;
 }
 article div {
   margin-bottom: 4rem;
