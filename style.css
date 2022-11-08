@@ -82,9 +82,12 @@ main .container {
   display: grid;
   grid-template-columns: 1fr 250px;
 }
-
+aside {
+  display: none;
+}
 article,aside {
   border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   padding: 4rem;
 }
 aside q, article p {
