@@ -9,7 +9,7 @@ const articleElement = document.querySelector("article");
 const prev = document.querySelector("a.prev");
 const next = document.querySelector("a.next");
 
-let selectedContentIndex = 3;
+let selectedContentIndex = 0;
 const div = document.createElement("div");
 
 div.innerHTML = article[selectedContentIndex]
